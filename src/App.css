@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+
+}
+
+.header, .footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search input{
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.cart{
+    color: white;
+    margin: 8px;
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+}
+
+.footer{
+
+    width: 100%;
+}
+
+.main{
+    height: 100vh;
+}
+
+.item1 {
+    grid-area: myArea;
+    height: 700px;
+    padding: 30px 10px;
+}
+  
+.grid-container {
+    display: grid;
+    grid-template-areas: 'myArea myArea . .'
+                        'myArea myArea . .';
+    grid-gap: 20px;
+}
+  
+.grid-container > div {
+  
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item1, .item2, .item3, .item4, .item5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productPage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 100px
+
+}
+
+.caption{
+    color: black;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.logoTag{
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+  
+  
+@keyframes move {
+    from {  position: absolute;
+            top: 100px;
+            right: 250px;
+        }
+    to {
+        
+        position: absolute;
+            top: 200px;
+            right: 250px;
+    }
+}
+.neckbandC, .headsetC, .webcamC, .gheadsetC{
+    height: 100vh;
+}
+.neckband, .headset, .gheadset, .webcam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add{
+    width: 100px;
+    background-color: rgb(230, 212, 15);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container{
+
+    height: 100vh;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list{
+    list-style-type: number;
+   
+}
+.listItem{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 800px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.close{
+    color: red;
+}
+
+.icons{
+    position: relative;
+}
+.count{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+
+}
+
+.subtotal{
+    position: relative;
+    left: 690px;
+    width: 150px;
+    background-color: rgb(17, 94, 195);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+
+}
