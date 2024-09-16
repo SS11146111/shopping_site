@@ -19,11 +19,7 @@ function App() {
         <Header itemList={itemList}/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product:offer" element={<Product itemList={itemList} setItemList={setItemList}/>} />
-          <Route path="/product:neckband" element={<Product itemList={itemList} setItemList={setItemList}/>} />
-          <Route path="/product:xyzheadset" element={<Product itemList={itemList} setItemList={setItemList}/>} />
-          <Route path="/product:webcam" element={<Product itemList={itemList} setItemList={setItemList}/>} />
-          <Route path="/product:gheadset" element={<Product itemList={itemList} setItemList={setItemList}/>} />
+          <Route path="/product" element={<Product itemList={itemList} setItemList={setItemList}/>} />
           <Route path="/cart" element={<Cart itemList={itemList} setItemList={setItemList}/>} />
         </Routes>
         <Footer/>

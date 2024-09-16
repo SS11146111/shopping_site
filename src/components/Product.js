@@ -9,9 +9,10 @@ import { Webcam } from './Webcam';
 
 export const Product = ({itemList, setItemList}) => {
     
-    var item = window.location.href.split(':')[3];
+  const queryParams = new URLSearchParams(window.location.search);
+  let item = queryParams.get('item'); 
 
-
+  console.log(item)
     if(item === "offer")
     {
         return (

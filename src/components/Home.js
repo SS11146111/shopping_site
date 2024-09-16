@@ -14,7 +14,7 @@ export const Home = () => {
 
     const handleClick = (item) => {
 
-        navigate(`/product:${item}`);
+        navigate(`/product?item=${item}`);
     }
 
   return ( 
