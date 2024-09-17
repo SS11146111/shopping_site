@@ -16,16 +16,16 @@ export const Header = ({ itemList }) => {
   const handleSearchSubmit = (e) => {
     e.preventDefault(); // Prevent form submission if inside a form
     if (searchQuery.trim().toLowerCase() === 'neckband') {
-      navigate(`/product:neckband`);
+      navigate(`/product?item=neckband`);
     }
     else if (searchQuery.trim().toLowerCase() === 'headset') {
-      navigate(`/product:xyzheadset`);
+      navigate(`/product?item=xyzheadset`);
     }
     else if (searchQuery.trim().toLowerCase() === 'gaming headset') {
-      navigate(`/product:gheadset`);
+      navigate(`/product?item=gheadset`);
     }
     else if (searchQuery.trim().toLowerCase() === 'webcam') {
-      navigate(`/product:webcam`);
+      navigate(`/product?item=webcam`);
     }
     else
     {

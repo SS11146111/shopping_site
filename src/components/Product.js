@@ -12,7 +12,7 @@ export const Product = ({itemList, setItemList}) => {
   const queryParams = new URLSearchParams(window.location.search);
   let item = queryParams.get('item'); 
 
-  console.log(item)
+  
     if(item === "offer")
     {
         return (
